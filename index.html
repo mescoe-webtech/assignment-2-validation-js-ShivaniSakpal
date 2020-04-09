@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Form - Login</title>
+    <script type="text/javascript">
+        function validate()
+        {
+            
+              var x = document.forms["myform"]["uname"].value;
+              if (x == "")
+              {
+                alert("Name must be filled out");
+                return false;
+              }
+              var y = document.forms["myform"]["password"].value;
+              if (y == "")
+              {
+                alert("Password must be filled out");
+                return false;
+              }
+            
+        }
+        
+    </script>
+</head>
+<body>
+    <header>
+        <h2 class="logo">LOGIN</h2>
+        <nav>
+        <ul class="nav-links">
+            <li><a class="nav-link" href="index.html">Login</a></li>
+            <li><a class="nav-link" href="signup.html">Signup</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box-container" >
+            <form class="box" name="myform" onsubmit="return validate()" method="post">
+                <h3>Login Form</h3>
+                <input type="text" placeholder="Enter your Name" name="uname"><br>
+                <input type="password" placeholder="Enter Password" name="password"><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

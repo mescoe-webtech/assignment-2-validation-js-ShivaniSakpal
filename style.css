@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background:wheat;
+}
+
+li , a 
+{
+    font-size: 20px;
+}
+
+header
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo
+{
+    margin-right: auto;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.nav-links li
+{
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-link
+{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: white;
+}
+
+.nav-link:hover
+{
+    padding: 0px 20px;
+    color: black;
+    border-bottom: 1px solid wheat;
+    transition: 0.5s;
+}
+
+.box-container
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box
+{
+    width: 450px;
+    height: 450px;
+    background: white;
+    position: absolute;
+    text-align: center;
+    color: black;
+    animation: box-in 2s ease;
+}
+
+
+.box h3
+{
+    color:black;
+    font-weight: 400;
+    margin: 25px auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.box input[type="text"],.box input[type=password]
+{
+    background: none;
+    text-align: center;
+    display: block;
+    margin: 25px auto;
+    padding: 14px 10px;
+    width: 200px;
+    color: black;
+    border-radius: 24px;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+.box input[type=radio]
+{
+    color: white;
+}
+
+.box input[type="text"]:focus,.box input[type=password]:focus
+{
+    width: 350px;
+    border-color:black;
+}
+
+.box button
+{    
+    background: none;
+    color: black;
+    display: block;
+    margin: 20px auto ;
+    text-align: center;
+    padding: 14px 10px;
+    width: 200px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.box button:hover
+{
+    background:darksalmon;
+    width: 300px;
+}
+
+
+.box-register
+{
+    width: 450px;
+    height: 1250px;
+    background: white;
+    position: absolute;
+    text-align: center;
+}
+
+.box-register h3
+{
+    color:black;
+    font-weight: 400;
+    margin: 25px auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.box-register input[type="text"],.box-register input[type=password],.box-register input[type=radio],.box-register input[type=date],.box-register input[type=email]
+{
+    background: none;
+    text-align: center;
+    display: block;
+    margin: 25px auto;
+    padding: 14px 10px;
+    width: 200px;
+    border-radius: 24px;
+    border: 2px solid black;
+    transition: 0.5s;
+    color: black;
+}
+
+.box-register input[type=radio]
+{
+    color: white;
+}
+
+.box-register input[type="text"]:focus,.box-register input[type=password]:focus
+{
+    width: 350px;
+    border-color:darksalmon;
+}
+
+.box-register button
+{    
+    background: none;
+    color: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 10px;
+    width: 200px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.box-register button:hover
+{
+    background:black;
+    color:white;
+    width: 300px;
+}
+
+
+.box-register label
+{
+    color: black;
+    font-size: 20px;
+}
+
+.box-register span
+{
+    color:black;
+    font-size: 18px;
+}
